@@ -1259,6 +1259,9 @@ class MistralForCausalLM(MistralPreTrainedModel):
         return reordered_past
 
 
+class MistralForAcausalLM(MistralForCausalLM):
+    ...
+    
 @add_start_docstrings(
     """
     The Mistral Model transformer with a sequence classification head on top (linear layer).
